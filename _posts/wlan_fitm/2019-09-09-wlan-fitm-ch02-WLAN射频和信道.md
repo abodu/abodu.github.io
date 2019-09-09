@@ -3,7 +3,7 @@ layout: post
 title:  "[WLAN-FITM] 2. WLAN射频和信道"
 date:    2019-09-09
 author:  Abodu
-#catalog: true
+catalog: true
 tags: [ WLAN, 笔记 ]
 ---
 

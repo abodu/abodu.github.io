@@ -3,7 +3,7 @@ layout: post
 title:  "[WLAN-FITM] 3. WLAN标准协议"
 date:    2019-09-09
 author:  Abodu
-#catalog: true
+catalog: true
 tags: [ WLAN, 笔记 ]
 ---
 

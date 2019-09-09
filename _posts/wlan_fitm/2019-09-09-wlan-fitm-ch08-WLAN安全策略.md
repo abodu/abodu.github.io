@@ -3,7 +3,7 @@ layout: post
 title:  "[WLAN-FITM] 8. WLAN安全策略"
 date:    2019-09-09
 author:  Abodu
-#catalog: true
+catalog: true
 tags: [ WLAN, 笔记 ]
 ---
 

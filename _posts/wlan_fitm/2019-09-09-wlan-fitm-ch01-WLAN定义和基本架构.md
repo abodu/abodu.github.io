@@ -3,7 +3,7 @@ layout: post
 title:  "[WLAN-FITM] 1. WLAN定义和基本架构"
 date:    2019-09-09
 author:  Abodu
-#catalog: true
+catalog: true
 tags: [ WLAN, 笔记 ]
 ---
 
