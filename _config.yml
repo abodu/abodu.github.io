@@ -7,7 +7,6 @@ description: "Find more time!"
 keyword: "Abodu,Linux,Bash"
 url: ""      # your host, for absolute URL
 baseurl: ""  # for example, '/blog' if your blog hosted on 'host/blog'
-port: 80
 
 # Publish posts or collection documents with a future date.
 future: true
@@ -29,7 +28,7 @@ highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: false  # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 #timezone: CN  
 
@@ -95,8 +94,10 @@ chrome-tab-theme-color: "#000000"
 service-worker: true
 
 
+
 # MathJax rendering for layout:page (e.g. post preview)
 page-mathjax: true
+
 
 
 # Friends
