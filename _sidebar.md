@@ -1,5 +1,6 @@
-* GitBooks
+* GitBook
   * [Bash圣经](/gitbooks/pure-bash-bible.md)
+  * [Linux Device Driver](/gitbooks/linux-device-driver.md)
 
 * 工具
   * [Docsify 快速搭建个人博客](/tools/docsify.md)

@@ -1,4 +1,4 @@
-<img width="100%" height="400px" src="/img/hbg.jpg" />
+<img width="100%" height="400px" src="hbg.jpg" />
 
 # Abodu Blogs
 
