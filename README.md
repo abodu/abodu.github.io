@@ -2,7 +2,7 @@
 
 作者 **[Abodu](<https://github.com/abodu>)** 从事于 `Linux Kernel`，`DPDK/VPP`，`Network Stack` 相关的工作。
 
-[Abodu BLOGs](https://abodu.github.io) 存放平常写一些文档或者个人笔记,具体内容见左侧导航栏。
+`》` 在页面左侧的导航栏列出了平常写一些文档或者个人笔记，可展开查看详细内容。
 
 ## License
 
