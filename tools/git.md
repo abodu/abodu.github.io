@@ -2,7 +2,7 @@
 
 > Git 当下最流行的版本管理工具，结合自己工作中的实际应用做了以下梳理，如果您在使用中还有其它问题欢迎评论留言
 
-## 快速导航
+<!-- ## 快速导航
 
 * [基础命令](#基础命令)
 * [分支操作](#分支操作)
@@ -10,7 +10,7 @@
 * [远程分支获取最新的版本到本地](#远程分支获取最新的版本到本地)
 * [拉取远程仓库指定分支到本地](#拉取远程仓库指定分支到本地)
 * [工具类](#工具类)
-* [常见问题](#常见问题)
+* [常见问题](#常见问题) -->
 
 ## 基础命令
 
@@ -153,15 +153,15 @@ pre-commit:
 
 * 打开项目中的 `.git/hooks`文件夹，找到 `pre-commit.sample`文件，将以下代码替换到文件中，或者，```npm install pre-commit --save`也可以，这个命令会自动执行以下操作。
 
-```shell
+```bash
 #!/bin/bash
 TSLINT="$(git rev-parse --show-toplevel)/node_modules/.bin/tslint"
 for file in $(git diff --cached --name-only | grep -E '\.ts$')
 do
-        git show ":$file" | "$TSLINT" "$file"
-        if [ $? -ne 0 ]; then
-                exit 1
-        fi
+  git show ":$file" | "$TSLINT" "$file"
+  if [ $? -ne 0 ]; then
+    exit 1
+  fi
 done
 ```
 
@@ -169,11 +169,11 @@ done
 
 <hr>
 
-#### Question5
+### Question5
 
 .gitignore 规则不生效的解决办法
 
-#### Answer5
+### Answer5
 
 把某些目录或文件加入忽略规则，按照上述方法定义后发现并未生效，原因是.gitignore只能忽略那些原来没有被追踪的文件，如果某些文件已经被纳入了版本管理中，则修改.gitignore是无效的。那么解决方法就是先把本地缓存删除（改变成未被追踪状态），然后再提交：
 
