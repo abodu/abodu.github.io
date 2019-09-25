@@ -14,7 +14,7 @@
   <script>
     window.$docsify = {
       name: '',
-      repo: 'https://github.com/abodu',
+      repo: 'https://github.com/abodu/abodu.github.io',
       auto2top: true,
       coverpage: true,
       loadSidebar: true,
@@ -39,5 +39,10 @@
   <script src="/js/zoom-image.js"></script>
   <script src="/js/components/prism-bash.js"></script>
   <script src="/js/prism-java.min.js"></script>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('/js/pwa.js')
+    }
+  </script>
 </body>
 </html>
