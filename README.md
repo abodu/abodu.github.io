@@ -1,13 +1,25 @@
+# Abodu's Blog
+
+[View Live Abodu Blog &rarr;](https://abodu.github.io)
+
 ## 简介
 
 作者 **[Abodu](<https://github.com/abodu>)** 从事于 `Linux Kernel`，`DPDK/VPP`，`Network Stack` 相关的工作。
 
 此站点为平常写一些文档或者个人笔记的存放。
 
-## Reading Notes
+## Gitbooks
 
-[`DataBase`](/database/README.md)
+* [Linux Device Driver](https://abodu.github.io/gb-linux-device-driver)
+* [Pure Bash Bible](https://abodu.github.io/gb-pure-bash-bible)
 
-[`HTTP`](https://github.com/Q-Angelo/http-protocol)
+## Tools
 
-[`工具`](/tools/git.md)
+* [git-usage](/tools/git.md)
+
+## License
+
+Apache License 2.0.
+Copyright (c) 2015-2019 Abodu
+
+Abodu's Blog is derived from [Node.js技术栈](https://github.com/Q-Angelo/Nodejs-Roadmap).
