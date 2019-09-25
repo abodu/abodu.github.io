@@ -1,24 +1,13 @@
-Abodu's Blog
-============
+## 简介
 
-### [View Live Abodu Blog &rarr;](https://abodu.github.io)
+作者 **[Abodu](<https://github.com/abodu>)** 从事于 `Linux Kernel`，`DPDK/VPP`，`Network Stack` 相关的工作。
 
-![](http://abodu.github.io/img/blog-desktop.jpg)
+此站点为平常写一些文档或者个人笔记的存放。
 
+## Reading Notes
 
-Support
--------
+[`DataBase`](/database/README.md)
 
-- **Feel free to fork**. 
-- I'll appreciate it if you keep the OG author and github link at footer.
-- **Star** the repo if you like it.
-- **Open issues** so people could help you.
+[`HTTP`](https://github.com/Q-Angelo/http-protocol)
 
-License
--------
-
-Apache License 2.0.
-Copyright (c) 2015-2019 Abodu
-
-Abodu's Blog is derived from [Clean Blog Jekyll Theme (MIT License)](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/)
-Copyright (c) 2013-2016 Blackrock Digital LLC.
+[`工具`](/tools/git.md)
