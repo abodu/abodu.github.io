@@ -1,5 +1,6 @@
 * GitBook
   * [Bash圣经](/gitbooks/pure-bash-bible.md)
+  * [Markdown语法手册](/gitbooks/markdown-syntax.md)
   * [Linux Device Driver](/gitbooks/linux-device-driver.md)
 
 * 工具
