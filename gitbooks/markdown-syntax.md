@@ -1,10 +1,10 @@
 # Markdown
 
-## Headings
+## 1、Headings
 
 <!-- tabs:start -->
 
-#### ** Rendered **
+#### Rendered
 
 # Heading 1 {docsify-ignore}
 
@@ -44,7 +44,7 @@ Ipsum ea amet dolore mollit incididunt fugiat nulla laboris est sint voluptate.
 Ex culpa id amet ipsum amet pariatur ipsum officia sit laborum irure ullamco
 deserunt. Consequat qui tempor occaecat nostrud proident.
 
-#### ** Markdown **
+#### Markdown
 
 ```markdown
 # Heading 1
@@ -88,7 +88,7 @@ deserunt. Consequat qui tempor occaecat nostrud proident.
 
 <!-- tabs:end -->
 
-## Text
+## 2、Text
 
 <!-- tabs:start -->
 
@@ -136,7 +136,7 @@ This is <sup>superscript</sup>
 
 <!-- tabs:end -->
 
-## Links
+## 3、Links
 
 <!-- tabs:start -->
 
@@ -176,7 +176,7 @@ This is <sup>superscript</sup>
 
 <!-- tabs:end -->
 
-## Lists
+## 4、Lists
 
 <!-- tabs:start -->
 
@@ -185,11 +185,11 @@ This is <sup>superscript</sup>
 **Ordered Lists**
 
 1. Ordered 1
-1. Ordered 2
+2. Ordered 2
    1. Ordered 2a
-   1. Ordered 2b
-   1. Ordered 2c
-1. Ordered 3
+   2. Ordered 2b
+   3. Ordered 2c
+3. Ordered 3
 
 **Unordered Lists**
 
@@ -240,7 +240,7 @@ This is <sup>superscript</sup>
 
 <!-- tabs:end -->
 
-## Blockquotes
+## 5、Blockquotes
 
 <!-- tabs:start -->
 
@@ -266,7 +266,7 @@ This is <sup>superscript</sup>
 
 <!-- tabs:end -->
 
-## Code
+## 6、Code
 
 <!-- tabs:start -->
 
@@ -308,7 +308,7 @@ console.log(total); // 3
 
 <!-- tabs:end -->
 
-## Notices
+## 7、Notices
 
 <!-- tabs:start -->
 
@@ -332,7 +332,7 @@ force the content to wrap and span multiple lines.
 
 <!-- tabs:end -->
 
-## Tabs
+## 8、Tabs
 
 Tabs provided via the
 [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs) plugin.
@@ -373,7 +373,7 @@ Ciao!
 
 <!-- tabs:end -->
 
-## Tables
+## 9、Tables
 
 <!-- tabs:start -->
 
@@ -397,7 +397,7 @@ Ciao!
 
 <!-- tabs:end -->
 
-## Keyboard
+## 10、Keyboard
 
 <!-- tabs:start -->
 
@@ -493,7 +493,7 @@ Ciao!
 
 <!-- tabs:end -->
 
-## Horizontal Rule
+## 11、Horizontal Rule
 
 <!-- tabs:start -->
 
@@ -509,7 +509,7 @@ Ciao!
 
 <!-- tabs:end -->
 
-## Images
+## 12、Images
 
 <!-- tabs:start -->
 
@@ -541,7 +541,7 @@ Reference-style
 
 <!-- tabs:end -->
 
-## Emoji
+## 13、Emoji
 
 A complete list is available here: [Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
