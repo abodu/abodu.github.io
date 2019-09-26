@@ -1,3 +1,5 @@
+# Pure Bash Bible
+
 ## 1、STRINGS
 
 ### 1. Trim leading and trailing white-space from string
