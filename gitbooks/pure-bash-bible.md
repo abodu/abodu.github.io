@@ -1,6 +1,6 @@
-## STRINGS
+## 1、STRINGS
 
-### Trim leading and trailing white-space from string
+### 1. Trim leading and trailing white-space from string
 
 This is an alternative to `sed`, `awk`, `perl` and other tools. The
 function below works by finding all leading and trailing white-space and
@@ -28,7 +28,7 @@ $ trim_string "$name"
 John Black
 ```
 
-### Trim all white-space from string and truncate spaces
+### 1.2 Trim all white-space from string and truncate spaces
 
 This is an alternative to `sed`, `awk`, `perl` and other tools. The
 function below works by abusing word splitting to create a new string
@@ -58,7 +58,7 @@ $ trim_all "$name"
 John Black is my name.
 ```
 
-### Use regex on a string
+### 1.3 Use regex on a string
 
 The result of `bash`'s regex matching can be used to replace `sed` for a
 large number of use-cases.
@@ -113,7 +113,7 @@ is_hex_color "$color" || color="#FFFFFF"
 # Do stuff.
 ```
 
-### Split a string on a delimiter
+### 1.4 Split a string on a delimiter
 
 **CAVEAT:** Requires `bash` 4+
 
@@ -155,7 +155,7 @@ is
 john
 ```
 
-### Change a string to lowercase
+### 1.5 Change a string to lowercase
 
 **CAVEAT:** Requires `bash` 4+
 
@@ -181,7 +181,7 @@ $ lower "hello"
 hello
 ```
 
-### Change a string to uppercase
+### 1.6 Change a string to uppercase
 
 **CAVEAT:** Requires `bash` 4+
 
@@ -207,7 +207,7 @@ $ upper "HELLO"
 HELLO
 ```
 
-### Reverse a string case
+### 1.7 Reverse a string case
 
 **CAVEAT:** Requires `bash` 4+
 
@@ -233,7 +233,7 @@ $ reverse_case "HELLO"
 hello
 ```
 
-### Trim quotes from a string
+### 1.8 Trim quotes from a string
 
 **Example Function:**
 
@@ -253,7 +253,7 @@ $ trim_quotes "$var"
 Hello, World
 ```
 
-### Strip all instances of pattern from string
+### 1.9 Strip all instances of pattern from string
 
 **Example Function:**
 
@@ -277,7 +277,7 @@ $ strip_all "The Quick Brown Fox" "Quick "
 The Brown Fox
 ```
 
-### Strip first occurrence of pattern from string
+### 1.10 Strip first occurrence of pattern from string
 
 **Example Function:**
 
@@ -298,7 +298,7 @@ $ strip "The Quick Brown Fox" "[[:space:]]"
 TheQuick Brown Fox
 ```
 
-### Strip pattern from start of string
+### 1.11 Strip pattern from start of string
 
 **Example Function:**
 
@@ -316,7 +316,7 @@ $ lstrip "The Quick Brown Fox" "The "
 Quick Brown Fox
 ```
 
-### Strip pattern from end of string
+### 1.12 Strip pattern from end of string
 
 **Example Function:**
 
@@ -334,7 +334,7 @@ $ rstrip "The Quick Brown Fox" " Fox"
 The Quick Brown
 ```
 
-### Percent-encode a string
+### 1.13 Percent-encode a string
 
 **Example Function:**
 
@@ -365,7 +365,7 @@ $ urlencode "https://github.com/dylanaraps/pure-bash-bible"
 https%3A%2F%2Fgithub.com%2Fdylanaraps%2Fpure-bash-bible
 ```
 
-### Decode a percent-encoded string
+### 1.14 Decode a percent-encoded string
 
 **Example Function:**
 
@@ -384,7 +384,7 @@ $ urldecode "https%3A%2F%2Fgithub.com%2Fdylanaraps%2Fpure-bash-bible"
 https://github.com/dylanaraps/pure-bash-bible
 ```
 
-### Check if string contains a sub-string
+### 1.15 Check if string contains a sub-string
 
 **Using a test:**
 
@@ -422,7 +422,7 @@ case "$var" in
 esac
 ```
 
-### Check if string starts with sub-string
+### 1.16 Check if string starts with sub-string
 
 ```bash
 if [[ $var == sub_string* ]]; then
@@ -435,7 +435,7 @@ if [[ $var != sub_string* ]]; then
 fi
 ```
 
-### Check if string ends with sub-string
+### 1.17 Check if string ends with sub-string
 
 ```bash
 if [[ $var == *sub_string ]]; then
@@ -448,9 +448,9 @@ if [[ $var != *sub_string ]]; then
 fi
 ```
 
-## ARRAYS
+## 2、ARRAYS
 
-### Reverse an array
+### 2.1 Reverse an array
 
 Enabling `extdebug` allows access to the `BASH_ARGV` array which stores
 the current function’s arguments in reverse.
@@ -483,7 +483,7 @@ blue
 red
 ```
 
-### Remove duplicate array elements
+### 2.2 Remove duplicate array elements
 
 Create a temporary associative array. When setting associative array
 values and a duplicate assignment occurs, bash overwrites the key. This
@@ -523,7 +523,7 @@ green
 blue
 ```
 
-### Random array element
+### 2.3 Random array element
 
 **Example Function:**
 
@@ -547,7 +547,7 @@ $ random_array_element 1 2 3 4 5 6 7
 3
 ```
 
-### Cycle through an array
+### 2.4 Cycle through an array
 
 Each time the `printf` is called, the next array element is printed. When
 the print hits the last array element it starts from the first element
@@ -562,7 +562,7 @@ cycle() {
 }
 ```
 
-### Toggle between two values
+### 2.5 Toggle between two values
 
 This works the same as above, this is just a different use case.
 
@@ -575,9 +575,9 @@ cycle() {
 }
 ```
 
-## LOOPS
+## 3、LOOPS
 
-### Loop over a range of numbers
+### 3.1 Loop over a range of numbers
 
 Alternative to `seq`.
 
@@ -588,7 +588,7 @@ for i in {0..100}; do
 done
 ```
 
-### Loop over a variable range of numbers
+### 3.2 Loop over a variable range of numbers
 
 Alternative to `seq`.
 
@@ -600,7 +600,7 @@ for ((i=0;i<=VAR;i++)); do
 done
 ```
 
-### Loop over an array
+### 3.3 Loop over an array
 
 ```bash
 arr=(apples oranges tomatoes)
@@ -611,7 +611,7 @@ for element in "${arr[@]}"; do
 done
 ```
 
-### Loop over an array with an index
+### 3.4 Loop over an array with an index
 
 ```bash
 arr=(apples oranges tomatoes)
@@ -627,7 +627,7 @@ for ((i=0;i<${#arr[@]};i++)); do
 done
 ```
 
-### Loop over the contents of a file
+### 3.5 Loop over the contents of a file
 
 ```bash
 while read -r line; do
@@ -635,7 +635,7 @@ while read -r line; do
 done < "file"
 ```
 
-### Loop over files and directories
+### 3.6 Loop over files and directories
 
 Don’t use `ls`.
 
@@ -668,11 +668,11 @@ done
 shopt -u globstar
 ```
 
-## FILE HANDLING
+## 4、FILE HANDLING
 
 **CAVEAT:** `bash` does not handle binary data properly in versions `< 4.4`.
 
-### Read a file to a string
+### 4.1 Read a file to a string
 
 Alternative to the `cat` command.
 
@@ -680,7 +680,7 @@ Alternative to the `cat` command.
 file_data="$(<"file")"
 ```
 
-### Read a file to an array (*by line*)
+### 4.2 Read a file to an array (*by line*)
 
 Alternative to the `cat` command.
 
@@ -692,7 +692,7 @@ IFS=$'\n' read -d "" -ra file_data < "file"
 mapfile -t file_data < "file"
 ```
 
-### Get the first N lines of a file
+### 4.3 Get the first N lines of a file
 
 Alternative to the `head` command.
 
@@ -719,7 +719,7 @@ $ head 1 ~/.bashrc
 # Prompt
 ```
 
-### Get the last N lines of a file
+### 4.4 Get the last N lines of a file
 
 Alternative to the `tail` command.
 
@@ -746,7 +746,7 @@ $ tail 1 ~/.bashrc
 # [[ -z "$TMUX"  ]] && exec tmux
 ```
 
-### Get the number of lines in a file
+### 4.5 Get the number of lines in a file
 
 Alternative to `wc -l`.
 
@@ -785,7 +785,7 @@ $ lines_loop ~/.bashrc
 48
 ```
 
-### Count files or directories in directory
+### 4.6 Count files or directories in directory
 
 This works by passing the output of the glob to the function and then counting the number of arguments.
 
@@ -815,7 +815,7 @@ $ count ~/Pictures/*.jpg
 64
 ```
 
-### Create an empty file
+### 4.7 Create an empty file
 
 Alternative to `touch`.
 
@@ -829,7 +829,7 @@ echo -n >file
 printf '' >file
 ```
 
-### Extract lines between two markers
+### 4.8 Extract lines between two markers
 
 **Example Function:**
 
@@ -854,7 +854,7 @@ $ extract ~/projects/pure-bash/README.md '```sh' '```'
 # Output here...
 ```
 
-## FILE PATHS
+## 5、FILE PATHS
 
 ### Get the directory name of a file path
 
@@ -903,7 +903,7 @@ $ basename ~/Pictures/Downloads/
 Downloads
 ```
 
-## VARIABLES
+## 6、VARIABLES
 
 ### Assign and access a variable using a variable
 
@@ -941,7 +941,7 @@ $ printf '%s\n' "$hello_world"
 value
 ```
 
-## ESCAPE SEQUENCES
+## 7、ESCAPE SEQUENCES
 
 Contrary to popular belief, there is no issue in utilizing raw escape sequences. Using `tput` abstracts the same ANSI sequences as if printed manually. Worse still, `tput` is not actually portable. There are a number of `tput` variants each with different commands and syntaxes (*try `tput setaf 3` on a FreeBSD system*). Raw sequences are fine.
 
@@ -993,7 +993,7 @@ Contrary to popular belief, there is no issue in utilizing raw escape sequences.
 | `\e[2J`     | Clear the screen.                                        |
 | `\e[2J\e[H` | Clear the screen and move cursor to `0,0`.               |
 
-## PARAMETER EXPANSION
+## 8、PARAMETER EXPANSION
 
 ### Indirection
 
@@ -1058,7 +1058,7 @@ Contrary to popular belief, there is no issue in utilizing raw escape sequences.
 | `${VAR:?STRING}` | Display an error if empty or unset.                             |
 | `${VAR?STRING}`  | Display an error if unset.                                      |
 
-## BRACE EXPANSION
+## 9、BRACE EXPANSION
 
 ### Ranges
 
@@ -1098,7 +1098,7 @@ echo {apples,oranges,pears,grapes}
 rm -rf ~/Downloads/{Movies,Music,ISOS}
 ```
 
-## CONDITIONAL EXPRESSIONS
+## 10、CONDITIONAL EXPRESSIONS
 
 ### File Conditionals
 
@@ -1154,7 +1154,7 @@ rm -rf ~/Downloads/{Movies,Music,ISOS}
 | `var < var2`  | Less than (*in ASCII alphabetical order.*)    |
 | `var > var2`  | Greater than (*in ASCII alphabetical order.*) |
 
-## ARITHMETIC OPERATORS
+## 11、ARITHMETIC OPERATORS
 
 ### Assignment
 
@@ -1208,9 +1208,9 @@ rm -rf ~/Downloads/{Movies,Music,ISOS}
 |-----------|------------------|-------------------|
 | `,`       | Comma Separator  | `((a=1,b=2,c=3))` |
 
-## ARITHMETIC
+### EXAMPLES
 
-### Simpler syntax to set variables
+#### Simpler syntax to set variables
 
 ```bash
 # Simple math
@@ -1226,7 +1226,7 @@ rm -rf ~/Downloads/{Movies,Music,ISOS}
 ((var=var2*arr[2]))
 ```
 
-### Ternary Tests
+#### Ternary Tests
 
 ```bash
 # Set the value of var to var2 if var2 is greater than var.
@@ -1237,7 +1237,7 @@ rm -rf ~/Downloads/{Movies,Music,ISOS}
 ((var=var2>var?var2:var))
 ```
 
-## TRAPS
+## 12、TRAPS
 
 Traps allow a script to execute code on various signals. In [pxltrm](https://github.com/dylanaraps/pxltrm) (*a pixel art editor written in bash*)  traps are used to redraw the user interface on window resize. Another use case is cleaning up temporary files on script exit.
 
@@ -1277,7 +1277,7 @@ trap 'code_here' DEBUG
 trap 'code_here' RETURN
 ```
 
-## PERFORMANCE
+## 13、PERFORMANCE
 
 ### Disable Unicode
 
@@ -1337,7 +1337,7 @@ function do_something() {
 }
 ```
 
-## INTERNAL VARIABLES
+## 14、INTERNAL VARIABLES
 
 ### Get the location to the `bash` binary
 
@@ -1428,7 +1428,7 @@ Each time `$RANDOM` is used, a different integer between `0` and `32767` is retu
 "$RANDOM"
 ```
 
-## INFORMATION ABOUT THE TERMINAL
+## 15、INFORMATION ABOUT THE TERMINAL
 
 ### Get the terminal size in lines and columns (*from a script*)
 
@@ -1505,7 +1505,7 @@ $ get_cursor_pos
 1 8
 ```
 
-## CONVERSION
+## 16、CONVERSION
 
 ### Convert a hex color to RGB
 
@@ -1646,7 +1646,7 @@ esac
 os="$_"
 ```
 
-## OTHER
+## 17、OTHER
 
 ### Use `read` as an alternative to the `sleep` command
 
@@ -1768,8 +1768,8 @@ uuid() {
         B="$((RANDOM%256))"
 
         case "$N" in
-            6)  printf '4%x' "$((B%16))" ;;
-            8)  printf '%c%x' "${C:$RANDOM%${#C}:1}" "$((B%16))" ;;
+            1)  printf '4%x' "$((B%16))" ;;
+            2)  printf '%c%x' "${C:$RANDOM%${#C}:1}" "$((B%16))" ;;
 
             3|5|7|9)
                 printf '%02x-' "$B"
