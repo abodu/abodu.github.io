@@ -58,7 +58,7 @@ IEEE802家族是由一系列局域网络(Local Area Network,LAN)技术规格所�
 
 IEEE802.11协议族成员如下：
 
- ![img](./img/lwd/20160409104536286.png)
+ ![img](img/linux-wifi-driver/20160409104536286.png)
 
 802.11基本规格涵盖了802.11 MAC 以及两种物理层(physical layer)：
 
@@ -84,7 +84,7 @@ IEEE802.11b是所有无线局域网标准中最著名，也是普及最广的标
 
 ### 2.3 802.11网络包含四种主要实体原件
 
- ![img](./img/lwd/20160409105245468.png)
+ ![img](img/linux-wifi-driver/20160409105245468.png)
 
 * `工作站(Station) --`  具有无线网络接入功能的电子设备(笔记本，手持设备等).
 * `基站(Access Point) --` 802.11网络所使用的帧必须经过转换才能被传到其它不同类型的网络，具有无线至有线桥接功能的设备称为基站(Access Point,AP).此外基站还有其它功能.
@@ -106,7 +106,7 @@ IEEE802.11b是所有无线局域网标准中最著名，也是普及最广的标
 
 > 无线的终端可以是802.11PCMCIA卡、PCI接口、ISA接口的，或者是在非计算机终端上的嵌入式设备(例如802.11手机)。
 
- ![img](./img/lwd/20160409110100636.png)
+ ![img](img/linux-wifi-driver/20160409110100636.png)
 
 802.11的数据链路层由两个之层构成，`逻辑链路层LLC(Logic Link Control)` 和 `媒体控制层MAC(Media Access Control)`。
 
@@ -122,7 +122,7 @@ IEEE802.11b是所有无线局域网标准中最著名，也是普及最广的标
 
 WiFi总共有14个信道，如下图所示：
 
- ![img](./img/lwd/20160409111045226.png)
+ ![img](img/linux-wifi-driver/20160409111045226.png)
 
 1. IEEE 802.11b/g标准工作在2.4G频段，频率范围为2.400—2.4835GHz，共83.5M带宽
 2. 划分为14个子信道(CN使用前13个,14信道仅在JP使用)
@@ -141,7 +141,7 @@ WiFi总共有14个信道，如下图所示：
   >
   > 在同一个AP内BSSID和SSID`一一映射`。(同一个AP的内部有多个BSSID则对应着多个SSID)
 
-   ![img](./img/lwd/53fdba9b9467c.png)
+   ![img](img/linux-wifi-driver/53fdba9b9467c.png)
 
 * `扩展服务集(ESS -- Extend Service Set)`
 
@@ -155,7 +155,7 @@ WiFi总共有14个信道，如下图所示：
 
 BSSID(MAC)<---->SSID 映射关系如下图:
 
- ![img](./img/lwd/20160409111309937.png)
+ ![img](img/linux-wifi-driver/20160409111309937.png)
 
 ### 3.3 无线接入过程三个阶段
 
@@ -167,7 +167,7 @@ STA(工作站)启动初始化、开始正式使用AP传送数据帧前，要经�
 2. 认证阶段 (`Authentication`)
 3. 关联(`Association`)
 
- ![img](./img/lwd/20160409111404453.png)
+ ![img](img/linux-wifi-driver/20160409111404453.png)
 
 ### 3.4 WiFi组成结构
 
@@ -194,7 +194,7 @@ Wi-Fi模块又名串口Wi-Fi模块，属于物联网传输层，功能是将`串
 Wi-Fi模块可分为三类：
 
 *-* `通用Wi-Fi模块`
-  
+
   比如手机、笔记本、平板电脑上的USB or SDIO接口模块，Wi-Fi协议栈和驱动是在安卓、Windows、IOS的系统里跑的，是需要非常强大的CPU来完成应用；
 
 * `路由器方案Wi-Fi模块`
@@ -213,11 +213,11 @@ Wi-Fi模块可分为三类：
 
 下面我们针对嵌入式WIFI与普通WIFI来进行对比，通过下表的对比，我们大致上可以理解到什么是嵌入式WIFI:
 
- ![1566193257825](./img/lwd/1566193257825.png)
+ ![1566193257825](img/linux-wifi-driver/1566193257825.png)
 
 下面是笔者所用一款USB接口的WiFi模块原理图：
 
- ![img](./img/lwd/20160409160325723.png)
+ ![img](img/linux-wifi-driver/20160409160325723.png)
 
 ### 4.2 WiFi模块主要功能
 
@@ -227,11 +227,11 @@ Wi-Fi模块可分为三类：
 
   > 一般家庭或办公室使用的无线路由器就是一个AP。
 
- ![img](./img/lwd/20160409160714834.png)
+ ![img](img/linux-wifi-driver/20160409160714834.png)
 
 * STA站点 `--` 每一个连接到无线网络中的终端都可称为一个站点。
 
- ![img](./img/lwd/20160409160834960.png)
+ ![img](img/linux-wifi-driver/20160409160834960.png)
 
 WiFi模块包括两种类型的拓扑形式:`基础网(Infra)`和`自组网(Adhoc)`。
 
